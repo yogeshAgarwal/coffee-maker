@@ -88,13 +88,3 @@ green_tea cannot be prepared because green_mixture is not available
 hot_tea cannot be prepared because item hot_water is not sufficient
 ```
 
-## Expectations
-
-● To simplify the problem – we will exclude the following issues from the scope:
-○ The solution does not have to scale out. We only need to design a solution to run
-on a single machine.
-■ This machine can be assumed to have access to large high performance
-and reliable file systems to store the objects in.
-■ This machine can be assumed to have multiple CPUs
-○ The solution does not have to solve storage reliability issues (assume that the underlying file system is reliable).
-● Please don’t expose any API, we need a functional test case.
