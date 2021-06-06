@@ -1,4 +1,6 @@
 # coffee-machine
+Language Used - Python, file test.json contains all the testcases.
+
 
 Write the ​working code​ to create a working coffee machine. Here are the desired features-
 
@@ -15,6 +17,8 @@ Write the ​working code​ to create a working coffee machine. Here are the de
 * There would be an indicator that would show which all ingredients are running low. We need
 some methods to refill them.
 * Please provide functional integration test cases for maximum coverage.
+
+
 
 ## Example​
 
