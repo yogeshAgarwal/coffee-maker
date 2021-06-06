@@ -43,7 +43,7 @@ class Stock:
 
         """
         for item in requirements:
-            print(item,'item')
+            # print(item,'item')
             if self.total_quantity.get(item, None) is None:
                 return False, f'{item} is not available'
             elif self.total_quantity[item] < requirements[item]:
@@ -60,5 +60,8 @@ def test_working():
     f.close()
     for item in data:
         machine = CoffeeMachine()
-        result = machine.start(data)
+        result = machine.start(item)
         print(result)
+
+
+test_working()
