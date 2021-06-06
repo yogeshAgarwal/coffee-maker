@@ -55,34 +55,10 @@ class Stock:
 
 
 def test_working():
-    file_input = [
-        "test0.json",
-        "test1.json",
-        "test2.json",
-        "test3.json",
-    ]
-    file_output = [
-        "answer0.json",
-        "answer1.json",
-        "answer2.json",
-        "answer3.json",
-    ]
-    for i in range(4):
-        f = open(file_input[i], "r")
-        data = json.loads(f.read())
+    f = open("test.json", "r")
+    data = json.loads(f.read())
+    f.close()
+    for item in data:
         machine = CoffeeMachine()
         result = machine.start(data)
-        f.close()
-        f2 = open(file_output[i], "r")
-        output = json.loads(f.read())
-        if result in output['possible_states']:
-            assert True, 'Correct Output'
-        else:
-            assert False, 'Incorrect Output'
-
-f = open('test2.json', "r")
-data = json.loads(f.read())
-machine = CoffeeMachine()
-result = machine.start(data)
-print(result)
-f.close()
+        print(result)
